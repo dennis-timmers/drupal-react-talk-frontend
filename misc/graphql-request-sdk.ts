@@ -3,7 +3,7 @@ import { GraphQLClient } from 'graphql-request';
 import { GetStaticPropsContext } from 'next';
 
 const CMS_URL =
-  'http://cms.drupal-react-talk.localhost/graphql/finished';
+  'https://cms.drupal-react-talk.main-bvxea6i-bqa3nqwg4dpcc.de-2.platformsh.site/graphql/finished';
 
 export function createGraphqlRequestSdk(
   ctx: GetStaticPropsContext = {}

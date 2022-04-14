@@ -1,0 +1,11 @@
+query Menus {
+  menu (type: main) {
+    name
+    items {
+      label
+      url {
+        path
+      }
+    }
+  }
+}

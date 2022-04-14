@@ -1,0 +1,16 @@
+query Page($path: String!) {
+  page(path: $path) {
+    ...BasicPage
+  }
+}
+
+fragment BasicPage on Page {
+  title
+  buildingBlocks {
+    ...builingBlock
+  }
+}
+
+fragment builingBlock on Paragraph {
+	__typename
+}

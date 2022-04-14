@@ -1,0 +1,13 @@
+overwrite: true
+schema:
+  - https://cms.drupal-react-talk.main-bvxea6i-bqa3nqwg4dpcc.de-2.platformsh.site/graphql/finished
+documents: '**/*.cms.graphql'
+generates:
+  generated/graphql-request.ts:
+    plugins:
+      - add:
+          content: '/* eslint-disable */'
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-graphql-request'
+      - 'fragment-matcher'
